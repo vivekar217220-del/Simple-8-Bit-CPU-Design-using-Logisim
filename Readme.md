@@ -1,6 +1,6 @@
 # Simple 8-Bit CPU in Logisim
 
-A digital logic project that follows an instruction through the fetch–decode–execute cycle. The repository contains screenshots and architecture notes.
+A digital logic project that follows an instruction through the fetch–decode–execute cycle. Use the circuit screenshots and component notes below to trace how the program counter, registers, and ALU work together.
 
 ![Logisim project screenshot](<Screenshot 2026-02-08 165254.png>)
 
@@ -10,7 +10,7 @@ A digital logic project that follows an instruction through the fetch–decode�
 2. **Decode** · Control logic interprets the instruction while the step counter sequences the micro-operations.
 3. **Execute** · The A and B registers feed the ALU. The result updates the output register and the status flags.
 
-## Architecture notes
+## CPU components
 
 ### Clock
 
@@ -81,7 +81,7 @@ Flags store status information about the ALU result.
 The Zero Flag becomes active when the output equals zero. 
 Flags are used for conditional operations such as branching and decision making.
 
-### Overall Working
+### Overall working
 
 The Program Counter fetches an instruction from memory. 
 The instruction is stored in the Instruction Register and decoded. 
